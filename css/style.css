@@ -144,6 +144,10 @@ a {
   width: 177px;
 }
 
+.breadcrumb {
+  background-color: #F5FAFE;
+}
+
 .breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,6 +178,7 @@ a {
 .hotel {
   padding-top: 18px;
   padding-bottom: 70px;
+  background-color: #F5FAFE;
 }
 
 .hotel-info {
