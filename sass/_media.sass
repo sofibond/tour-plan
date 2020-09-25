@@ -3,7 +3,7 @@
     max-width: 960px
 @media (max-width: 992px)
   .container
-    max-width: 760px
+    max-width: 700px
   .logo
     width: 132px
     height: 18px
@@ -26,13 +26,15 @@
       margin-left: auto
 @media (max-width: 768px)
   .container
-    max-width: 700px
     width: 95%
     &__search
       &__input
         width: 340px
 @media (max-width: 700px)
+  .container
+    width: 85%
   .navbar
+    height: 70px
     &__search, &-menu, &__user
       display: none
     &-bottom
@@ -41,26 +43,38 @@
     &-button
       display: flex
       width: 16px
-      height: 11px
+      height: 12px
       align-items: center
       justify-content: space-between
       flex-direction: column
       border: none
-      background-color: #ffffff
+      background-color: transparent
       cursor: pointer
       padding: 0
       &__line
         width: 16px
         height: 1px
         background-color: $text-color
+  .stars
+    flex-basis: auto
+  .hotel
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__rating
+        display: none
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+        margin-bottom: 0
+      &__offer
+        order: -1
+        margin-left: 0
 @media (max-width: 576px) 
-  .container
-    width: 98%
-    &__search
-      &__input
-        width: 320px
   .logo
     width: 99px
     height: 14px
   
-        
