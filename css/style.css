@@ -275,6 +275,23 @@ a {
   line-height: 18px;
 }
 
+.swiper-slide {
+  width: 728px;
+  height: 450px;
+  width: 728px;
+  position: relative;
+}
+
+.swiper-slide__photo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .swiper-container {
   width: 100%;
   height: 450px;
