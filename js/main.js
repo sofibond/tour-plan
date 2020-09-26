@@ -8,3 +8,4 @@ var mySwiper = new Swiper('.swiper-container', {
     prevEl: '.slider-button--prev',
   },
 })
+mySwiper.keyboard.enable();
