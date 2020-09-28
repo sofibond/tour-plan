@@ -60,23 +60,9 @@
   &__counter
     font-size: 14px
     line-height: 18px
-.swiper-slide
-  width: 728px
-  height: 450px
-  width: 728px
-  position: relative
-  &__photo
-    position: absolute
-    left: 0
-    right: 0
-    top: 0
-    bottom: 0
-    width: 100% 
-    height: 100% 
-    // object-fit: cover
 .swiper-container 
   width: 100%
-  height: 450px
+  height: 100%
   position: relative
   border-radius: 8px
   &:after
@@ -93,6 +79,7 @@
 
 .slider
   width: 728px
+  height: 450px
   &-button
     position: absolute
     top: 50%
@@ -112,6 +99,21 @@
     &--prev
       left: 18px
       background-image: url(../img/stroke-left.svg)
+  .swiper
+    &-slide
+      // width: 100%
+      // height: 100%
+      // position: relative
+      &__photo
+        // position: absolute
+        // left: 0
+        // right: 0
+        // top: 0
+        // bottom: 0
+        // width: 100% 
+        height: 100% 
+        width: 100%
+        object-fit: cover
 .booking
   background-color: $dark
   color: $light
@@ -142,18 +144,19 @@
     line-height: 16px
   &-room
     margin-top: 5px
-  &__text
-    display: flex
-    align-items: center
-    justify-content: space-between
-    min-width: 80px
-    font-style: normal
-    font-weight: normal
-    font-size: 12px
-    line-height: 16px
-    margin-bottom: 8px
-  &__description
-    margin-left: 9px
+    text-align: right
+    &__text
+      display: flex
+      align-items: center
+      justify-content: space-between
+      min-width: 80px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+      margin-bottom: 8px
+    &__description
+      margin-left: 9px
   &__call-center
     display: flex
     align-items: center
@@ -175,6 +178,7 @@
     line-height: 25px
   &__num
     margin-left: 8px
+    margin-right: 4px
   &__button
     font-style: normal
     font-weight: 600
@@ -187,5 +191,8 @@
     height: 45px
     padding: 0
     border: none
-  
+.map
+  width: 347px
+  border-radius: 10px
+  overflow: hidden
 
