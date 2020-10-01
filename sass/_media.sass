@@ -2,11 +2,11 @@
   .container
     max-width: 960px
     margin: auto
-  .slider
-    width: 590px
   .hotel
     &-grid
       padding-right: 0
+    &-slider
+      width: 590px
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -30,28 +30,36 @@
         line-height: 15px
     &__user
       margin-left: auto
-  .slider
-    width: 700px
   .hotel
+    padding-bottom: 60px
     &-grid
       flex-direction: column
     &__slider
       margin-bottom: 30px
     &-right
       flex-direction: row
+    &-slider
+      width: 700px
   .booking
     width: 340px
   .map
     width: 340px
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
+    &__title
+      font-size: 30px
 @media (max-width: 768px)
   .container
     width: 95%
     &__search
       &__input
         width: 340px
-  .slider
-    width: 100%
-    height: 400px
+  .hotel
+    &-slider
+      width: 100%
+      height: 400px
   .booking
     width: 340px
   .map
@@ -63,7 +71,7 @@
       width: 95%
 @media (max-width: 760px)
   .hotel
-    padding-bottom: 60px
+    padding-bottom: 40px
     &-right
       flex-direction: column
   .booking
@@ -120,6 +128,24 @@
     &-wrapper
       align-items: flex-start
       width: 90%
+  .reviews
+    &__title
+      font-size: 18px
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &:after, &::before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          left: 50% 
+          margin-left: -65px
+          transform: translate(-50%, 0) 
+        &--next
+          right: 50% 
+          margin-right: -65px
+          transform: translate(50%, 0) 
 @media (max-width: 576px)
   .container
     width: 92%
@@ -130,8 +156,9 @@
     padding-bottom: 40px
     &__slider
       margin-bottom: 20px
-  .slider 
-    height: 250px
+  .hotel
+    &-slider 
+      height: 250px
   .subscribe
     width: 100%
   .newsletter
@@ -150,7 +177,8 @@
 @media (max-width: 400px) 
   .container
     width: 98%
-  .slider 
-    height: 179px
+  .hotel
+    &-slider 
+      height: 179px
 
   
