@@ -937,6 +937,9 @@ a {
     padding-top: 40px;
     padding-bottom: 60px;
   }
+  .activities-wrapper {
+    width: 100%;
+  }
 }
 
 @media (max-width: 755px) {
@@ -971,6 +974,29 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-one {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .card-two {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .card-three {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .card-four {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
 }
 
@@ -1110,9 +1136,6 @@ a {
     margin-bottom: 37px;
   }
   .subscribe {
-    width: 100%;
-  }
-  .card {
     width: 100%;
   }
 }
