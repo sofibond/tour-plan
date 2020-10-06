@@ -10,6 +10,9 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -62,6 +65,48 @@
   .card
     width: 338px
     height: 250px
+  .footer
+    padding-bottom: 33px
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__logo
+      grid-row: 1 / 2
+      min-height: 120px
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__additional
+      grid-row: 2 / 3
+      grid-column: span 2 
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &__input
+      flex-basis: 49% 
+    &-bottom
+      grid-template-columns: repeat(2, 1fr)
+      padding-top: 56px
+      &__text
+        grid-column: 1 / 2
+        justify-self: start
+      &__icon
+        grid-column: 2 / 3
+        width: 136px
+        height: 22px 
 @media (max-width: 768px)
   .container
     width: 95%
@@ -86,6 +131,9 @@
     padding-bottom: 60px
     &-wrapper
       width: 100%
+  .footer
+    &__logo
+      min-width: 104px
 @media (max-width: 755px)
   .hotel
     padding-bottom: 40px
@@ -180,7 +228,11 @@
         &--next
           right: 50% 
           margin-right: -65px
-          transform: translate(50%, 0) 
+          transform: translate(50%, 0)
+  .footer
+    padding-top: 74px
+    &__input
+      flex-basis: 100% 
 @media (max-width: 576px)
   .container
     width: 92%
@@ -208,6 +260,48 @@
       margin-bottom: 37px
   .subscribe
     width: 100% 
+  .footer
+    padding-bottom: 21px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1px
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+        margin-left: 0
+      &-form
+        grid-row: 7
+        grid-column: 1  
+        margin-left: 0
+    &-bottom
+      grid-template-columns: 1fr
+      padding-top: 30px
+      grid-template-rows: 1fr 1fr
+      grid-row-gap: 10px
+      &__text
+        grid-column: 1 / 2
+        justify-self: start
+        width: 277px
+      &__icon
+        grid-column: 1 / 2 
+        justify-self: start
 @media (max-width: 400px) 
   .container
     width: 98%
