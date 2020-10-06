@@ -92,9 +92,11 @@
       &-details
         grid-column: span 5
         grid-row: 3
+        margin-left: 0
       &-form
         grid-column: span 5
         grid-row: 4
+        margin-left: 0
     &__input
       flex-basis: 49% 
     &-bottom
@@ -170,6 +172,9 @@
   body
     padding-top: 78px
   .navbar
+    &-menu
+      &__mobile
+        padding: 0
     &--mobile
       &_fixed
         position: fixed
@@ -177,7 +182,7 @@
         top: 0
         right: 0
         z-index: 99
-    height: 70px
+        height: 70px
     &__search, &__user
       &--mobile
         &_hidden
@@ -187,6 +192,13 @@
     &__user
       flex-direction: column
       justify-content: center
+      &--mobile
+        &_visible
+          margin-bottom: 7px
+    &__search
+      &--mobile
+        &_visible
+          margin-bottom: 19px
     &-bottom
       // background-color: $light
       display: none
@@ -275,6 +287,9 @@
 @media (max-width: 576px)
   .container
     width: 92%
+  .navbar
+    &__search
+      width: 245px
   .logo
     width: 99px
     height: 14px
