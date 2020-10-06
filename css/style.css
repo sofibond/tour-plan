@@ -31,6 +31,13 @@ a {
   color: inherit;
 }
 
+placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  font-style: Mulish;
+  color: #bdbdbd;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -964,6 +971,7 @@ a {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  font-style: normal;
 }
 
 .footer__message {
@@ -976,6 +984,7 @@ a {
       flex-basis: 100%;
   margin-bottom: 23px;
   resize: none;
+  font-style: normal;
 }
 
 .footer__button {
@@ -1477,7 +1486,7 @@ a {
 
 @media (max-width: 576px) {
   .container {
-    width: 92%;
+    width: 85%;
   }
   .navbar__search {
     width: 245px;
@@ -1595,7 +1604,7 @@ a {
 
 @media (max-width: 400px) {
   .container {
-    width: 98%;
+    width: 90%;
   }
   .hotel-slider {
     height: 179px;
