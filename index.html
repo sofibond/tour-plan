@@ -19,7 +19,7 @@
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="img/horisontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -222,7 +222,7 @@
                   <span class="booking__num">12100</span>
                 </a>
               </div>
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">View Other Options</button>
             </div>
             <div id="map" class="map">
               <!-- <iframe
@@ -463,7 +463,7 @@
               </ul>
             </div>
             <div class="footer__contact-form">
-              <h3 class="footer-title footer__title--mb-3">Send us a massage</h3>
+              <h3 class="footer__title footer__title--mb-3">Send us a massage</h3>
               <form action="send.php" method="POST" class="footer__form">
                 <input type="text"
                  class="input footer__input" placeholder="Your Full Name*"
@@ -471,7 +471,7 @@
                 <input type="text" 
                 class="input footer__input" placeholder="Phone Number*"
                 name="phone">
-                <textarea class="footer__message"
+                <textarea class="message footer__message"
                  cols="30" 
                  placeholder="Message" 
                  name="message"></textarea>
@@ -492,6 +492,34 @@
           </div>
         </div>
     </footer>
+    <div class="modal">
+      <div class="modal__overlay">
+        <div class="modal__dialog">
+              <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="icon: close">
+              </a>
+                <h3 class="modal__title modal__title--mb-3">Send us a massage</h3>
+                <form action="send.php" method="POST" class="modal__form">
+                  <input type="text"
+                  class="input modal__input" placeholder="Your Full Name*"
+                  name="name">
+                  <input type="text" 
+                  class="input modal__input" placeholder="Phone Number*"
+                  name="phone">
+                  <input type="text"
+                  class="input modal__input" placeholder="Email*"
+                  name="email">
+                  <textarea class="message modal__message"
+                  cols="30" 
+                  placeholder="Message" 
+                  name="message"></textarea>
+                  <button class="button modal__button" type="submit">Send</button>
+                  <span class="modal__info">* Required Fields</span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

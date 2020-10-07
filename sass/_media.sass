@@ -117,6 +117,9 @@
         height: 22px
     &__logo, &__legal, &__categories, &__additional
       justify-self: start
+  .modal
+    &__dialog
+      padding: 23px 54px
 @media (max-width: 768px)
   .container
     width: 95%
@@ -368,6 +371,15 @@
       &__icon
         grid-column: 1 / 2
         justify-self: start
+  .modal
+    &__dialog
+      width: 85%
+      padding: 23px 24px
+    &__input
+      height: 40px
+    &__button
+      padding: 14px 18px
+      height: 40px
 @media (max-width: 400px)
   .container
     width: 90%
@@ -381,3 +393,17 @@
       margin-left: 10px
     &-wrapper
       padding: 0 10px
+  .footer
+    &__info
+      width: 100%
+      margin-bottom: 15px
+    &__button
+      order: 1
+  .modal
+    &__info
+      width: 100%
+      margin-bottom: 15px
+    &__button
+      order: 1
+    
+  

@@ -22,6 +22,37 @@ button:focus, input:focus, textarea:focus {
   outline: none;
 }
 
+.input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+}
+
+.message {
+  background-color: #fff;
+  border-radius: 4px;
+  height: 123px;
+  padding: 18px 23px;
+  border: none;
+  font-family: 'Mulish', sans-serif;
+}
+
+.button {
+  min-width: 160px;
+  height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: #ec1f46;
+  border: none;
+  border-radius: 4px;
+}
+
 button {
   cursor: pointer;
 }
@@ -300,6 +331,7 @@ a {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin: 0;
 }
 
 .hotel-slider__item {
@@ -398,6 +430,7 @@ a {
   width: 350px;
   min-height: 210px;
   padding: 28px;
+  font-family: 'Nunito', sans-serif;
 }
 
 .booking__info {
@@ -517,7 +550,7 @@ a {
   color: #ffffff;
   background-color: #ec1f46;
   border-radius: 4px;
-  width: 295px;
+  width: 100%;
   height: 45px;
   padding: 0;
   border: none;
@@ -861,9 +894,10 @@ a {
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(mincontent, 1fr))[4];
-      grid-template-columns: repeat(4, minmax(mincontent, 1fr));
-  grid-gap: 20px;
+  -ms-grid-columns: (minmax(min-content, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  grid-gap: 30px;
   grid-auto-rows: minmax(40px, -webkit-min-content);
   grid-auto-rows: minmax(40px, min-content);
 }
@@ -876,7 +910,6 @@ a {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  margin-left: -30px;
 }
 
 .footer__categories {
@@ -886,8 +919,8 @@ a {
 }
 
 .footer__legal {
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .footer__social-links {
@@ -921,9 +954,8 @@ a {
 
 .footer__contact-form {
   grid-column: span 2;
-  -ms-grid-column-align: end;
-      justify-self: end;
   max-width: 539px;
+  width: 100%;
 }
 
 .footer__form {
@@ -984,7 +1016,15 @@ a {
 }
 
 .footer__icon-wrapper {
-  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  margin-right: 10px;
+  padding-top: 5px;
 }
 
 .footer__text {
@@ -998,23 +1038,14 @@ a {
 }
 
 .footer__input {
-  background-color: #fff;
-  border-radius: 4px;
-  border: none;
-  padding: 0 23px;
-  height: 50px;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   font-style: normal;
+  width: 100%;
 }
 
 .footer__message {
-  background-color: #fff;
-  border-radius: 4px;
-  height: 123px;
-  padding: 18px 23px;
-  border: none;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
@@ -1022,26 +1053,12 @@ a {
   font-style: normal;
 }
 
-.footer__button {
-  min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #ffffff;
-  background-color: #ec1f46;
-  border: none;
-  border-radius: 4px;
-}
-
 .footer__info {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #E0E0E0;
+  color: #bdbdbd;
 }
 
 .footer-bottom {
@@ -1080,6 +1097,97 @@ a {
   height: 22px;
   -ms-grid-column-align: right;
       justify-self: right;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 104;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 478px;
+  padding: 33px 88px;
+  background-color: #0a223d;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+  border-radius: 8px;
+  z-index: 105;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-botton: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__message {
+  width: 100%;
+  min-height: 123px;
+  margin-bottom: 15px;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #bdbdbd;
 }
 
 @media (max-width: 1200px) {
@@ -1270,6 +1378,9 @@ a {
   .footer__logo, .footer__legal, .footer__categories, .footer__additional {
     -ms-grid-column-align: start;
         justify-self: start;
+  }
+  .modal__dialog {
+    padding: 23px 54px;
   }
 }
 
@@ -1654,6 +1765,17 @@ a {
     -ms-grid-column-align: start;
         justify-self: start;
   }
+  .modal__dialog {
+    width: 85%;
+    padding: 23px 24px;
+  }
+  .modal__input {
+    height: 40px;
+  }
+  .modal__button {
+    padding: 14px 18px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1671,6 +1793,24 @@ a {
   }
   .activities-wrapper {
     padding: 0 10px;
+  }
+  .footer__info {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .modal__info {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
