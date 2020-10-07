@@ -464,10 +464,17 @@
             </div>
             <div class="footer__contact-form">
               <h3 class="footer-title footer__title--mb-3">Send us a massage</h3>
-              <form action="send.php" class="footer__form">
-                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-                <input type="text" class="input footer__input" placeholder="Phone Number*" name="phome">
-                <textarea class="footer__message" cols="30" placeholder="Message" name="message"></textarea>
+              <form action="send.php" method="POST" class="footer__form">
+                <input type="text"
+                 class="input footer__input" placeholder="Your Full Name*"
+                 name="name">
+                <input type="text" 
+                class="input footer__input" placeholder="Phone Number*"
+                name="phone">
+                <textarea class="footer__message"
+                 cols="30" 
+                 placeholder="Message" 
+                 name="message"></textarea>
                 <button class="button footer__button" type="submit">Send</button>
                 <span class="footer__info">* Required Fields</span>
               </form>
