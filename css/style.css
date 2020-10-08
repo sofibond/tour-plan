@@ -94,6 +94,10 @@ a {
   color: #bdbdbd;
 }
 
+.invalid {
+  color: #ec1f46;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1038,6 +1042,10 @@ a {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1173,13 +1181,17 @@ a {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1205,7 +1217,7 @@ a {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1352,7 +1364,7 @@ a {
     -ms-grid-column-align: start;
         justify-self: start;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
@@ -1640,7 +1652,7 @@ a {
   .footer {
     padding-top: 74px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
