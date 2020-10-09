@@ -76,8 +76,8 @@ $(document).ready(function () {
           minlength: "Must contain at least 2 characters"
         },
         email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
+          required: "We need your email to contact you",
+          email: "Your email must be in the format of name@domain.com"
         },
         phone: {
           required: "Phone number is required"

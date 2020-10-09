@@ -22,6 +22,7 @@
     position: fixed
     top: 50%
     left: 50%
+    overflow: scroll
     width: 478px
     padding: 33px 88px
     background-color: $dark
@@ -31,9 +32,11 @@
     z-index: 105
     visibility: hidden
     opacity: 0
+    max-height: 100%
     &--visible
       visibility: visible
       opacity: 1
+      overflow: scroll
   &__close
     position: absolute
     right: 18px

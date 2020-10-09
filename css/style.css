@@ -28,6 +28,7 @@ button:focus, input:focus, textarea:focus {
   border: none;
   padding: 0 23px;
   height: 50px;
+  color: #bdbdbd;
 }
 
 .message {
@@ -66,36 +67,38 @@ a {
   font-size: 12px;
   line-height: 15px;
   font-style: normal;
-  font-family: Mulish;
-  color: #bdbdbd;
+  font-family: 'Mulish', sans-serif;
+  color: #333333;
 }
 
 :-ms-input-placeholder {
   font-size: 12px;
   line-height: 15px;
   font-style: normal;
-  font-family: Mulish;
-  color: #bdbdbd;
+  font-family: 'Mulish', sans-serif;
+  color: #333333;
 }
 
 ::-ms-input-placeholder {
   font-size: 12px;
   line-height: 15px;
   font-style: normal;
-  font-family: Mulish;
-  color: #bdbdbd;
+  font-family: 'Mulish', sans-serif;
+  color: #333333;
 }
 
 ::placeholder {
   font-size: 12px;
   line-height: 15px;
   font-style: normal;
-  font-family: Mulish;
-  color: #bdbdbd;
+  font-family: 'Mulish', sans-serif;
+  color: #333333;
 }
 
 .invalid {
   color: #ec1f46;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .navbar {
@@ -629,22 +632,25 @@ a {
   position: relative;
   width: 350px;
   height: 55px;
-  border-radius: 4px;
-  overflow: hidden;
+}
+
+.subscribe-form {
+  width: 350px;
+  height: 55px;
 }
 
 .subscribe__input {
-  position: absolute;
   width: 100%;
   height: 100%;
   border: none;
   padding-left: 33px;
   font-style: normal;
+  font-family: 'Mulish', sans-serif;
   padding-right: 75px;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  color: #bdbdbd;
+  border-radius: 4px;
 }
 
 .subscribe__button {
@@ -656,6 +662,7 @@ a {
   border: none;
   background-color: #ec1f46;
   color: #ffffff;
+  border-radius: 0 4px 4px 0;
 }
 
 .reviews {
@@ -974,6 +981,7 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 
 .footer__ul {
@@ -1049,8 +1057,8 @@ a {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
-  font-style: normal;
-  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .footer__message {
@@ -1144,6 +1152,7 @@ a {
   position: fixed;
   top: 50%;
   left: 50%;
+  overflow: scroll;
   width: 478px;
   padding: 33px 88px;
   background-color: #0a223d;
@@ -1154,11 +1163,13 @@ a {
   z-index: 105;
   visibility: hidden;
   opacity: 0;
+  max-height: 100%;
 }
 
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow: scroll;
 }
 
 .modal__close {
@@ -1681,6 +1692,9 @@ a {
   .subscribe {
     width: 100%;
   }
+  .subscribe-form {
+    width: 100%;
+  }
   .newsletter {
     padding: 76px 0 83px 0;
   }
@@ -1695,9 +1709,6 @@ a {
   }
   .newsletter__title {
     margin-bottom: 37px;
-  }
-  .subscribe {
-    width: 100%;
   }
   .footer {
     padding-bottom: 21px;

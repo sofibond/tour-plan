@@ -12,7 +12,7 @@
       type="text/javascript"
     ></script>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan-Hotel Booking</title>
   </head>
@@ -130,7 +130,11 @@
       <div class="container">
         <div class="hotel-info">
           <div class="hotel-info__text">
-            <div class="hotel-wrapper" data-aos="zoom-in-right" data-aos-duration="1100">
+            <div
+              class="hotel-wrapper"
+              data-aos="zoom-in-right"
+              data-aos-duration="1100"
+            >
               <div class="stars">
                 <img src="img/Star.svg" alt="star" />
                 <img src="img/Star.svg" alt="star" />
@@ -141,12 +145,20 @@
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
             </div>
-            <p class="hotel-description hotel-info__description" data-aos="zoom-in-right" data-aos-duration="1100">
+            <p
+              class="hotel-description hotel-info__description"
+              data-aos="zoom-in-right"
+              data-aos-duration="1100"
+            >
               Half-Board/ AllInclusive + Complimentary Activities + Child Stays
               Free
             </p>
           </div>
-          <div class="rating hotel-info__rating" data-aos="zoom-in-left" data-aos-duration="1100">
+          <div
+            class="rating hotel-info__rating"
+            data-aos="zoom-in-left"
+            data-aos-duration="1100"
+          >
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
           </div>
@@ -263,13 +275,21 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
-          <input
-            type="text"
-            class="subscribe__input"
-            placeholder="Your emale adress"
-          />
-          <button class="subscribe__button">Send</button>
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe form"
+        >
+          <div class="subscribe-form">
+            <input
+              type="email"
+              class="subscribe__input"
+              name="email"
+              placeholder="Your email adress"
+              required
+            />
+            <button class="subscribe__button">Send</button>
+          </div>
         </form>
       </div>
     </section>
@@ -380,7 +400,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card card-one" data-aos="fade-up" data-aos-duration="1000">
+          <div
+            class="card activities__card card-one"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The curious corner of chamarel"
@@ -389,7 +413,11 @@
             <h3 class="card__title">The curious corner of chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card card-two" data-aos="fade-up" data-aos-duration="1400">
+          <div
+            class="card activities__card card-two"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
             <img
               src="img/activity-1.jpg"
               alt="Gymkhana club golf course"
@@ -398,7 +426,11 @@
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card card-three" data-aos="fade-up" data-aos-duration="1800">
+          <div
+            class="card activities__card card-three"
+            data-aos="fade-up"
+            data-aos-duration="1800"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -407,7 +439,11 @@
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card card-four" data-aos="fade-up" data-aos-duration="2100">
+          <div
+            class="card activities__card card-four"
+            data-aos="fade-up"
+            data-aos-duration="2100"
+          >
             <img
               src="img/activity-3.jpg"
               alt="The blue marine discovery quest"
@@ -557,24 +593,24 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a massage</h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-group">
-                <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-                required
-              />
-              </div>
-              <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  required
-                />
-              </div>
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                  />
+                </div>
               <textarea
                 class="message footer__message"
                 cols="30"
