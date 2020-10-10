@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-      rel="preload"
+      rel="stylesheet"
     />
     <script
-      src="https://api-maps.yandex.ru/2.0-stable/?apikey=3a6eba6d-2ec4-4e6a-92e7-f281fbe3b728&load=package.standard&loadByRequire=1&lang=en-US"
+      src="https://api-maps.yandex.ru/2.0-stable/?apikey=3a6eba6d-2ec4-4e6a-92e7-f281fbe3b728&load=package.standard&lang=en-US"
       type="text/javascript"
     ></script>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -136,11 +136,13 @@
               data-aos-duration="1100"
             >
               <div class="stars">
-                <img src="img/Star.svg" alt="star" />
-                <img src="img/Star.svg" alt="star" />
-                <img src="img/Star.svg" alt="star" />
-                <img src="img/Star.svg" alt="star" />
-                <img src="img/Star.svg" alt="star" />
+                <div class="stars-wrapper">
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                </div>
               </div>
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -285,7 +287,7 @@
               type="email"
               class="subscribe__input"
               name="email"
-              placeholder="Your email adress"
+              placeholder="Your email address"
               required
             />
             <button class="subscribe__button">Send</button>
@@ -295,7 +297,7 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about us</h2>
+        <h2 class="reviews__title">What people thinks about us</h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <!-- Additional required wrapper -->
@@ -311,11 +313,13 @@
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img src="img/Star.svg" alt="star" />
-                    <img src="img/Star.svg" alt="star" />
-                    <img src="img/Star.svg" alt="star" />
-                    <img src="img/Star.svg" alt="star" />
-                    <img src="img/Star.svg" alt="star" />
+                    <div class="stars-wrapper">
+                      <img src="img/Star.svg" alt="star" />
+                      <img src="img/Star.svg" alt="star" />
+                      <img src="img/Star.svg" alt="star" />
+                      <img src="img/Star.svg" alt="star" />
+                      <img src="img/Star.svg" alt="star" />
+                    </div>
                   </div>
                 </div>
                 <p class="reviews-slider__text">
@@ -410,7 +414,7 @@
               alt="The curious corner of chamarel"
               class="card__image"
             />
-            <h3 class="card__title">The curious corner of chamarel</h3>
+            <h3 class="card__title">The curious corner of&nbspchamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
           <div
@@ -436,7 +440,7 @@
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
             />
-            <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+            <h3 class="card__title">Tamarind falls hiking trip&nbsp- full day</h3>
             <button class="card__button">Book Now</button>
           </div>
           <div
@@ -449,7 +453,7 @@
               alt="The blue marine discovery quest"
               class="card__image"
             />
-            <h3 class="card__title">The blue marine discovery quest</h3>
+            <h3 class="card__title">The blue marine&nbspdiscovery quest</h3>
             <button class="card__button">Book Now</button>
           </div>
         </div>
@@ -549,7 +553,7 @@
             </ul>
           </div>
           <div class="footer__contact-details">
-            <h3 class="footer__title footer__title--mb-3">Contact Detailes</h3>
+            <h3 class="footer__title footer__title-details footer__title--mb-3">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
@@ -562,8 +566,8 @@
                     alt="icon: map-marker"
                   />
                 </div>
-                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-                States
+                <p class="footer__ul-li">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                States</p>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -573,10 +577,12 @@
                     alt="icon: phone-call"
                   />
                 </div>
-                Tel (business hours) : 269 1500<br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div>
+                  <p class="footer__ul-li">Tel (business hours) : <a href="#">269 1500</a></p>
+                  <p class="footer__ul-li">Tel (hotline) Monday - Saturday: <a href="#">52-56-61-38</a> (08:00 am – 20:00
+                  pm)</p>
+                  <p class="footer__ul-li">Tel (hotline) Sunday: <a href="#">52-56-61-38</a> (08:00 am – 14:00 pm)</p>
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -586,12 +592,12 @@
                     alt="icon:email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <p class="footer__ul-li"><a href="#">cherly.lawson@example.com</a></p>
               </li>
             </ul>
           </div>
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a massage</h3>
+            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
                 <div class="footer__input-group">
                   <input
