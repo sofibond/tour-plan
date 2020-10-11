@@ -231,6 +231,10 @@
     padding-top: 78px
   .navbar
     &-menu
+      &__item
+        &--mobile
+          &_visible
+            width: 245px
       &__mobile
         padding-bottom: 79px
     &--mobile
@@ -247,6 +251,7 @@
           display: none
         &_visible
           display: flex
+          margin-left: 0
     &__user
       flex-direction: column
       justify-content: center
@@ -346,7 +351,7 @@
         flex-basis: 100%
 @media (max-width: 576px)
   .container
-    width: 87%
+    width: 93.7%
   .navbar
     &-top 
       padding: 28px 0
@@ -462,13 +467,16 @@
       &__text
         grid-column: 1 / 2
         justify-self: start
-        width: 277px
+        width: 100%
       &__icon
         grid-column: 1 / 2
         justify-self: start
     &__title
       &--mb-3
         margin-bottom: 15px
+    &__ul
+      &-li
+        margin-top: 0
   .modal
     &__dialog
       width: 85%
