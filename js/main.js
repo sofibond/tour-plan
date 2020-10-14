@@ -1,16 +1,15 @@
 $(document).ready(function () {
-var hotelSlider = new Swiper('.hotel-slider', {
+  var hotelSlider = new Swiper('.hotel-slider', {
     // Optional parameters
-  loop: true,
+    loop: true,
 
     // Navigation arrows
-  navigation: {
-    nextEl: '.hotel-slider__button--next',
-    prevEl: '.hotel-slider__button--prev',
-    },
-})
-
-hotelSlider.keyboard.enable();
+    navigation: {
+      nextEl: '.hotel-slider__button--next',
+      prevEl: '.hotel-slider__button--prev',
+      },
+  });
+  // hotelSlider.keyboard.enable();
 
   var reviewsSlider = new Swiper('.reviews-slider', {
     // Optional parameters
@@ -21,12 +20,11 @@ hotelSlider.keyboard.enable();
       nextEl: '.reviews-slider__button--next',
       prevEl: '.reviews-slider__button--prev',
     },
-  })
-  reviewsSlider.keyboard.enable();
+  });
+  // reviewsSlider.keyboard.enable();
 
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener('click', function () {
-    console.log('Клик по кнопке меню');
     document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
   });
 
@@ -63,8 +61,9 @@ hotelSlider.keyboard.enable();
           email: "Your email must be in the format of name@domain.com"
         },
         phone: {
-          required: "Phone number is required"
-        }
+          required: "Phone number is required",
+          minlength: "Must contain at least 18 characters"
+        },
       }
     });
     $(function(){
